@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: lightblue;
+            color: black;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<div>
+    <h2>What is CBT</h2>
+    <p>   Cognitive behavioral therapy (CBT) is a form of psychological treatment that has been demonstrated to be effective for a range of problems including depression, anxiety disorders, alcohol and drug use problems, marital problems, eating disorders, and severe mental illness. Numerous research studies suggest that CBT leads to significant improvement in functioning and quality of life. In many studies, CBT has been demonstrated to be as effective as, or more effective than, other forms of psychological therapy or psychiatric medications.
+        It is important to emphasize that advances in CBT have been made on the basis of both research and clinical practice. Indeed, CBT is an approach for which there is ample scientific evidence that the methods that have been developed actually produce change. In this manner, CBT differs from many other forms of psychological.<br><br>
+
+        
+        What cognitive behavioral therapy can help with
+        CBT can help with a range of things, including the following mental health conditions:
+       <ul>
+        <li>depression</li>
+        <li>	eating disorders</li>
+        <li>	post-traumatic stress disorder (PTSD)</li>
+        <li>	anxiety disorders, including panic disorder and phobia</li>
+        <li>	obsessive-complisive disorder (OCD)</li>
+        <li>	schizophrenia</li>
+        <li>	bipolar disorder</li>
+        <li>	substance misuse </li>
+   
+        </ul>
+    </p>
+    </div>
+</html>
