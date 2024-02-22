@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Therapy Doctors</title>
+<style>
+body {
+font-family: 'Arial', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: #f8f8f8;
+color: #333;
+}
+
+.container {
+width: auto;
+height: auto;
+margin: 0 auto;
+}
+
+h1 {
+text-align: center;
+}
+
+.doctors-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 20px;
+justify-content: center;
+margin-top: 30px;
+color: aqua;
+}
+
+.doctor-card {
+background-color: lightskyblue;
+border-radius: 20px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+padding: 20px;
+text-align: center;
+transition: transform 0.3s ease;
+position: relative;
+overflow: hidden;
+}
+
+.doctor-card:hover {
+transform: scale(1.05);
+}
+
+.doctor-card img {
+border-radius: 50%;
+max-width: 100%;
+height: auto;
+margin-bottom: 15px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.doctor-name {
+font-size: 20px;
+font-weight: bold;
+color: #009688;
+}
+
+.doctor-info {
+font-size: 16px;
+color: #666;
+margin-top: 10px;
+}
+
+.overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+opacity: 0;
+transition: opacity 0.3s ease;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.doctor-card:hover .overlay {
+opacity: 1;
+}
+
+.overlay h3,
+.overlay p {
+color: #fff;
+margin: 0;
+}
+
+footer {
+background-color: #333;
+color: white;
+text-align: center;
+padding: 10px 0;
+position: relative;
+bottom: 0;
+width: 100%;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-image: url("banner.avif");
+}
+
+.nav2{
+background-color: white;
+text-decoration: none;
+color: black;
+font-style: oblique;
+font-size: large;
+padding: 14px 16px;
+display: block;
+text-align: center;
+overflow: hidden;
+height: 0.1%;
+}
+.nav2 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.nav2 li{
+    margin-right: 90px;
+}
+.nav2 img{
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+
+.h3{
+    color: white;
+    background-color: rgba(6, 1, 1, 0.918);
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    font-style: oblique;
+}
+
+table{
+    text-align: center;
+    margin-left: 45%;
+}
+
+</style>
+</head>
+<body>
+
+    <nav class="nav2">
+        <div class="container2">
+        <ul>
+        <li><img src="ZenCare.png" alt="ZenCare Logo"></li>
+        <li><a class="nav2a" href="//127.0.0.1:5500/coverpage.html">Home</a></li>
+        <li><a class="nav2a" href="http://127.0.0.1:5500/services.html">Services</a></li>
+        <li><a class="nav2a" href="http://127.0.0.1:5500/WP.html">Book Appointment</a></li>
+        <li><a class="nav2a" href="http://127.0.0.1:5500/doctors.html">Our Doctors</a></li>
+        <li><a class="nav2a" href="http://127.0.0.1:5500/contactpage.html">Contact Us</a></li>
+        <li><a class="nav2a" href="http://127.0.0.1:5500/login.html">Login/Signup</a></li>
+        <li><a class="nav2a" href="http://127.0.0.1:5500/payment.html">Pay Online</a></li>
+        </ul>
+        </div>
+        </nav>
+
+<div class="container">
+<h1>Know About Our Doctors</h1>
+
+<div class="doctors-grid">
+<!-- Doctor 1 -->
+<div class="doctor-card">
+<img src="doctor1.avif" alt="Doctor 1">
+<div class="overlay">
+<h3>Dr.Mukesh Chawla </h3>
+<p>Cognitive Behavioral Therapy</p>
+</div>
+<div class="doctor-name">Dr.Mukesh Chawla </div>
+<div class="doctor-info">Age: 40<br>Qualifications: Ph.D. in Psychology</div>
+</div>
+<!-- Doctor 2 -->
+<div class="doctor-card">
+<img src="doctor2.avif" alt="Doctor 2">
+<div class="overlay">
+<h3>Dr.Kartik Mishra </h3>
+<p>Mindfulness Meditation</p>
+</div>
+<div class="doctor-name">Dr.Kartik Mishra </div>
+<div class="doctor-info">Age: 45<br>Qualifications: MD in Psychiatry</div>
+</div>
+<!-- Doctor 3-->
+<div class="doctor-card">
+<img src="doctor3.avif" alt="Doctor 3">
+<div class="overlay">
+<h3> Dr. Gajendra Purihot</h3>
+<p>Psychologist</p>
+</div>
+<div class="doctor-name"> Dr. Gajendra Purihot</div>
+<div class="doctor-info">Age: 39<br>Qualifications: Doctor of Philosophy (Ph.D), Clinical Psychology </div>
+</div>
+<!-- Doctor 4 -->
+<div class="doctor-card">
+<img src="doctor4.avif" alt="Doctor 4">
+<div class="overlay">
+<h3> Dr. Kunal Chabria </h3>
+<p>Pastoral Counselor</p>
+</div>
+<div class="doctor-name"> Dr. Kunal Chabria</div>
+<div class="doctor-info">Age: 41<br>Qualifications: Ph.d in Pastoral Counselling</div>
+</div>
+<!-- Doctor 5-->
+<div class="doctor-card">
+<img src="doctor5.avif" alt="Doctor 5">
+<div class="overlay">
+<h3> Prerna Kohli</h3>
+<p> Psychiatric Nurse</p>
+</div>
+<div class="doctor-name"> Prerna Kohli</div>
+<div class="doctor-info">Age: 37<br>Qualifications: MD in Psychiatric</div>
+</div>
+<!--Doctor 6 -->
+<div class="doctor-card">
+<img src="doctor6.avif" alt="Doctor 6">
+<div class="overlay">
+<h3>Dr.Rohit Shetty</h3>
+<p> Psychodynamic Psychotherapy</p>
+</div>
+<div class="doctor-name">Dr.Rohit Shetty</div>
+<div class="doctor-info">Age: 41<br>Qualifications: Ph.D in Psychodynamic Psychotherapy</div>
+</div>
+<!--Doctor 7 -->
+<div class="doctor-card">
+<img src="doctor7.avif" alt="Doctor 7">
+<div class="overlay">
+<h3> Dr. Varun Jhoshi</h3>
+<p> Behavioral Therapy</p>
+</div>
+<div class="doctor-name"> Dr. Varun Jhoshi</div>
+<div class="doctor-info">Age: 36<br>Qualifications: MD in Behavioral Therapy</div>
+</div>
+
+</div>
+</div>
+
+<div class="h3">
+    <h2> ZenCare Consultancies</h2>
+    <h3> NMIMS SHIRPUR MAHARASHTRA 425405</h3>
+    <table>
+        <tr>
+            <td> 
+                Monday    
+            </td>
+            <td> 10 AM- 7 PM
+            </td>
+        </tr>
+        <tr> 
+            <td> 
+                Tuesday    
+            </td>
+            <td> 
+                10 AM- 7 PM
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                Wednesday    
+            </td>
+            <td>
+                10 AM- 7 PM
+            </td>
+        </tr>
+        <tr> 
+            <td> 
+                Thursday    
+            </td>
+            <td> 
+                10 AM- 7 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Friday    
+            </td>
+            <td> 
+                10 AM- 7 PM
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Saturday    
+            </td>
+            <td> 
+                Closed
+            </td>
+        </tr>
+        <tr> 
+            <td>
+                Sunday
+            </td>
+            <td> 
+                Closed
+            </td>
+        </tr>
+    </table>
+</div>
+
+<footer>
+<p>&copy; 2024 Doctor Consultation. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
