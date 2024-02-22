@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Therapy Clinic - Sign Up</title>
+  <style>
+body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: lightblue;
+      color: #fff;
+      padding: 2em 0;
+      animation: moveHeader 10s linear infinite;
+    }
+
+    @keyframes moveHeader {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    section {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      color: black;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #0077cc;
+      color: whitesmoke;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: lightgreen;
+    }
+
+    footer {
+      background-color: grey;
+      color: #fff;
+      padding: 1em 0;
+    }
+    .container {
+width: 90%;
+margin: 0 auto;
+}
+nav {
+background-color: darkcyan;
+color: whitesmoke;
+padding: 0.5em 0;
+}
+nav h1 {
+margin: 0;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+justify-content: space-between;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-image: url("banner.avif");
+}
+
+.nav2{
+background-color: white;
+text-decoration: none;
+color: black;
+font-style: oblique;
+font-size: large;
+padding: 14px 16px;
+display: block;
+text-align: center;
+overflow: hidden;
+height: 0.1%;
+}
+.nav2 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.nav2 li{
+    margin-right: 90px;
+}
+.nav2 img{
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+}
+  </style>
+</head>
+
+<body>
+  <nav class="nav2">
+    <div class="container2">
+    <ul>
+    <li><img src="ZenCare.png" alt="ZenCare Logo"></li>
+    <li><a class="nav2a" href="//127.0.0.1:5500/coverpage.html">Home</a></li>
+    <li><a class="nav2a" href="http://127.0.0.1:5500/services.html">Services</a></li>
+    <li><a class="nav2a" href="http://127.0.0.1:5500/WP.html">Book Appointment</a></li>
+    <li><a class="nav2a" href="http://127.0.0.1:5500/doctors.html">Our Doctors</a></li>
+    <li><a class="nav2a" href="http://127.0.0.1:5500/contactpage.html">Contact Us</a></li>
+    <li><a class="nav2a" href="http://127.0.0.1:5500/login.html">Login/Signup</a></li>
+    <li><a class="nav2a" href="http://127.0.0.1:5500/payment.html">Pay Online</a></li>
+    </ul>
+    </div>
+    </nav>
+
+  <header>
+    <h1>Join Our Therapy Community</h1>
+  </header>
+
+  <section>
+    <h1><i><strong> Sign Up With ZenCare Consultancies </strong></i></h1>
+    <p><strong> Unlock a world of personalized support and resources by becoming a member of our therapy community. Fill out the form below to get started on your journey to well-being. </strong></p>
+
+    <form id="signupForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="phone">Phone No:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Therapy Clinic. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", function (event) {
+      event.preventDefault(); 
+
+      var username = document.getElementById("username").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+      var phone = document.getElementById("phone").value;
+
+      if (username && email && password && phone) {
+
+        alert("Form submitted successfully!");
+      } else {
+
+        alert("Please fill out all fields.");
+      }
+    });
+
+    document.getElementById("signupForm").addEventListener("submit", function () {
+      document.querySelector("header").style.animation = "none";
+    });
+  </script>
+</body>
+
+</html>
