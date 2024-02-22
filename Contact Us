@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: lightskyblue;
+            margin: 0;
+            padding: 0;
+        }
+
+        #contact-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            animation: slideInFromBottom 1.5s linear forwards;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .contact-method:hover {
+            transform: translateX(10px);
+        }
+
+        .contact-icon {
+            margin-right: 10px;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .contact-button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            margin-left: 340px;
+        }
+
+        .contact-button:hover {
+            background-color: #45a049;
+        }
+
+        @keyframes slideInFromBottom {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+    <title>Contact Us - Therapy Consultancies</title>
+</head>
+<body>
+
+<div id="contact-container">
+    <h1>Contact Us</h1>
+
+    <div class="contact-method">
+        <i class="fas fa-phone contact-icon"></i>
+        <span>Call us at: <a href="tel:+123456789" style="text-decoration: none;">+916362487877</a></span>
+    </div>
+
+    <div class="contact-method">
+        <i class="fas fa-envelope contact-icon"></i>
+        <span>Email us at: <a href="mailto:info@therapyconsultancies.com" style="text-decoration: none;">info@zencareconsultancies.com</a></span>
+    </div>
+
+    <div class="contact-method">
+        <i class="fas fa-map-marker-alt contact-icon"></i>
+        <a href="https://www.google.co.in/maps/search/NMIMS+SHIRPUR+MAHARASTRA+425405/@21.2851634,74.8406466,17z/data=!3m1!4b1?entry=ttu" style="text-decoration: none; color: blue;"><span>NMIMS SHIRPUR MAHARASTRA 425405</span></a>
+    </div>
+
+    <button class="contact-button" onclick="showMap()" >  <a href="https://www.google.co.in/maps/search/NMIMS+SHIRPUR+MAHARASTRA+425405/@21.2851634,74.8406466,17z/data=!3m1!4b1?entry=ttu" style="text-decoration: none; color: white;">show on map</a></button>
+</div>
+
+<script>
+    function showMap() {
+        alert("Map display logic goes here!");
+    }
+</script>
+
+</body>
+</html>
