@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Your Therapy Clinic</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 1em 0;
+      text-align: center;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #fff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      line-height: 1.8;
+    }
+
+    h1 {
+      color: #1a1a1a;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    .team-member {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .team-member img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-member h2 {
+      color: #1a1a1a;
+      margin-bottom: 5px;
+    }
+
+    .team-member p {
+      color: #555;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 1em 0;
+      text-align: center;
+    }
+
+    /* Stylish hover effect for team members */
+    .team-member:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Responsive design */
+    @media (max-width: 600px) {
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Therapy Clinic</h1>
+  </header>
+
+  <section>
+    <h1>About Us</h1>
+    <p>Welcome to Your Therapy Clinic, where we are committed to providing compassionate and personalized therapeutic services to enhance the well-being of our clients. Our team of dedicated professionals brings a wealth of experience to create a supportive and healing environment.</p>
+
+    <div class="team-member">
+      <img src="therapist1.jpg" alt="Dr. Jane Doe">
+      <h2>Dr. Jane Doe</h2>
+      <p>Lead Therapist</p>
+    </div>
+
+    <div class="team-member">
+      <img src="therapist2.jpg" alt="Dr. John Smith">
+      <h2>Dr. John Smith</h2>
+      <p>Clinical Psychologist</p>
+    </div>
+
+    <div class="team-member">
+      <img src="therapist3.jpg" alt="Dr. Sarah Johnson">
+      <h2>Dr. Sarah Johnson</h2>
+      <p>Family Therapist</p>
+    </div>
+
+    <div class="team-member">
+      <img src="therapist4.jpg" alt="Dr. Michael Williams">
+      <h2>Dr. Michael Williams</h2>
+      <p>Psychiatrist</p>
+    </div>
+
+    <!-- Add more team members as needed -->
+
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Your Therapy Clinic. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
